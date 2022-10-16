@@ -1,16 +1,26 @@
 public class ContaPoupança extends ContaCorrente{
-    double juros;
-    ContaPoupança(String numero, int saldo) {
+
+
+    private double juros;
+
+
+    public ContaPoupança(String numero, double saldo) {
         super(numero, saldo);
+
     }
 
-    void juros(double juros) {
-        saldo = juros*saldo + saldo;
+     void juros(double juros) {
+         setSaldo(getSaldo() * juros + getSaldo());
     }
-    double getJuros(){
-        return this.juros;
-    }
+
+
+
+
 
 
 }
+
+
+
+
 

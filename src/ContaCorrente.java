@@ -1,16 +1,18 @@
 public class ContaCorrente {
 
-    String numero;
-    double saldo;
-    int saque;
-    int deposito;
+    private String numero;
+   private double saldo;
+    private int saque;
+    private int deposito;
 
 
-    ContaCorrente(String numero, int saldo){
+    public  ContaCorrente(String numero, double saldo){
         this.numero = numero;
         this.saldo = saldo;
         this.saque = saque;
     }
+
+
 
     //GET SET NUMERO
     String getNumero(){
@@ -26,9 +28,11 @@ public class ContaCorrente {
     double getSaldo(){
         return this.saldo;
     }
-    void setSaldo(int saldo){
+    void setSaldo(double saldo){
         this.saldo=saldo;
     }
+
+
 
     //GET SET DEPOSITO
     int getDeposito(){
